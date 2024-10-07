@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="disability.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="operations">
+      <div class="operations__tab-container">
+        <div class="operations--tab">
+          <div class="jobs--container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            ></button>
+
+            <h6><span>Tech</span></h6>
+          </div>
+          <div class="jobs--container">
+            <button
+              class="btn operations__tab operations__tab--2"
+              data-tab="2"
+            ></button>
+            <h6><span>Feedback</span></h6>
+          </div>
+        </div>
+      </div>
+      <div
+        class="operations__content operations__content--1 operations__content--active"
+      >
+        <form id="registrationformcontainer" action="" method="">
+          <div class="registration--form">
+            <label for="fullname"
+              >Fullname<span class="required">*</span></label
+            >
+            <input type="text" id="fullname1" placeholder="" name="fullname" />
+            <div class="error-message hidden" id="nameError">
+              Please enter your name.
+            </div>
+          </div>
+          <div class="registration--form">
+            <label for="">Email<span class="required">*</span></label>
+            <input type="email" id="email1" name="email1" />
+            <div class="error-message hidden" id="emailError">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="registration--form">
+            <label for="">Disability<span class="required">*</span></label>
+            <input type="password" id="password1" />
+            <div class="error-message hidden" id="passwordError">
+              Please enter disabilty type.
+            </div>
+          </div>
+          <div class="registration--form">
+            <label for="age">Age</label>
+            <input type="number" id="age1" />
+            <div class="error-message hidden" id="ageError">
+              Please enter valid age number.
+            </div>
+          </div>
+          <div class="registration--form">
+            <p>please select your gender<span class="required">*</span></p>
+            <div class="registration--gender">
+              <label for="male">Male</label>
+              <input type="radio" id="sexM" name="gender" value="male" />
+            </div>
+            <div>
+              <label for="gender">Female</label>
+              <input type="radio" id="sexF" name="gender" value="female" />
+            </div>
+            <div class="error-message hidden" id="sexError">
+              Please select your gender.
+            </div>
+          </div>
+          <div class="registration--form">
+            <label for="country">County</label>
+            <select id="native--country" name="options">
+              <option value="Botswana"></option>
+              <option value="South Africa">South Mount</option>
+              <option value="Swaziland">waziland</option>
+              <option value="Lesotho">Riverton</option>
+            </select>
+          </div>
+          <div class="registration--form--terms">
+            <div class="terms--container">
+              <input type="checkbox" id="terms1" value="agree" />
+              <p class="termsp">
+                I have read and agreed
+                <a href="#">User agreement</a> and
+                <a href="#">Privacy policy</a>
+              </p>
+            </div>
+            <div class="error-message--terms hidden" id="agreeError">
+              You must agree to the Terms and Conditions to proceed.
+            </div>
+          </div>
+          <div class="registration--form--btn">
+            <button class="registration--submit--btn">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">
+          Kindly wait as we process your request.
+        </h5>
+        <p>20 min 30sec</p>
+      </div>
+    </div>
+
+    <script src="disability.js"></script>
+  </body>
+</html>

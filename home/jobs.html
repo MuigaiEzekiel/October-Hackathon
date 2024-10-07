@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="jobs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="operations">
+      <div class="operations__tab-container">
+        <div class="operations--tab">
+          <div class="jobs--container">
+            <button
+              class="btn operations__tab operations__tab--1 operations__tab--active"
+              data-tab="1"
+            ></button>
+
+            <h6><span>Tech</span></h6>
+          </div>
+          <div class="jobs--container">
+            <button
+              class="btn operations__tab operations__tab--2"
+              data-tab="2"
+            ></button>
+            <h6><span>Engeneering</span></h6>
+          </div>
+          <div class="jobs--container">
+            <button
+              class="btn operations__tab operations__tab--3"
+              data-tab="3"
+            ></button>
+            <h6><span>Health</span></h6>
+          </div>
+        </div>
+      </div>
+      <div
+        class="operations__content operations__content--1 operations__content--active"
+      >
+        <div class="operations__icon operations__icon--1"></div>
+        <h5 class="operations__header">Tech</h5>
+
+        <p>10 positions available</p>
+
+        <p>10 positions available</p>
+      </div>
+
+      <div class="operations__content operations__content--2">
+        <div class="operations__icon operations__icon--2">
+          <svg>
+            <use xlink:href="img/icons.svg#icon-home"></use>
+          </svg>
+        </div>
+        <h5 class="operations__header">engineers jobs</h5>
+        <p>10 positions available</p>
+
+        <p>10 positions available</p>
+      </div>
+      <div class="operations__content operations__content--3">
+        <div class="operations__icon operations__icon--3"></div>
+        <h5 class="operations__header">Health jobs</h5>
+        <p>10 positions available</p>
+
+        <p>10 positions available</p>
+      </div>
+    </div>
+
+    <script src="jobs.js"></script>
+  </body>
+</html>

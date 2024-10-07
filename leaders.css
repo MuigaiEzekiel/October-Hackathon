@@ -1,0 +1,33 @@
+.search--container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search--container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.search--container p {
+  font-size: 1.1rem;
+}
+.search--btns--container {
+  border-radius: 20px;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+.search--btns--container input {
+  outline: none;
+  border: none;
+  background-color: aquamarine;
+  color: black;
+}
+.search--btns--container i {
+  color: aqua;
+}
+.hidden {
+  display: none;
+}

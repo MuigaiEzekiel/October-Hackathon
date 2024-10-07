@@ -1,0 +1,144 @@
+body {
+  height: 100vh;
+}
+.operations {
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.operations__tab-container {
+  position: fixed;
+  bottom: 10px;
+
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+}
+.operations--tab {
+  display: flex;
+  justify-content: center;
+}
+
+.jobs--container {
+  position: relative;
+  display: block;
+  margin: 0.4rem;
+  justify-content: center;
+  display: block;
+}
+/* .operations__tab {
+  margin-right: 2.5rem;
+  transform: translateY(-50%);
+  padding: 50px;
+} */
+
+.operations__tab span {
+  margin-right: 1rem;
+  font-weight: 600;
+}
+
+.operations__tab--1 {
+  background-color: aqua;
+  padding: 40px;
+  border: none;
+  border-radius: 10px;
+}
+.operations__tab--2 {
+  background-color: purple;
+  padding: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+.operations__tab--3 {
+  background-color: chocolate;
+  padding: 40px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* .operations__tab--active {
+  transform: translateY(-66%);
+} */
+
+.operations__content {
+  display: none;
+
+  /* JUST PRESENTATIONAL */
+  font-size: 1.7rem;
+  padding: 2.5rem 7rem 6.5rem 7rem;
+}
+
+.operations__content--active {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  column-gap: 3rem;
+  row-gap: 0.5rem;
+}
+
+.operations__header {
+  font-size: 2.25rem;
+  font-weight: 500;
+  align-self: center;
+}
+
+.operations__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.operations__icon svg {
+  height: 2.75rem;
+  width: 2.75rem;
+}
+
+.operations__content p {
+  grid-column: 2;
+}
+
+.operations__icon--1 {
+  background-color: var(--color-secondary-opacity);
+}
+.operations__icon--2 {
+  background-color: var(--color-primary-opacity);
+}
+.operations__icon--3 {
+  background-color: var(--color-tertiary-opacity);
+}
+.operations__icon--1 svg {
+  fill: var(--color-secondary-darker);
+}
+.operations__icon--2 svg {
+  fill: var(--color-primary);
+}
+.operations__icon--3 svg {
+  fill: var(--color-tertiary);
+}
+
+.tech--jobs {
+  margin: 2px;
+  background-color: aqua;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.engineering--jobs {
+  margin: 2px;
+  background-color: blueviolet;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.health--jobs {
+  margin: 2px;
+  background-color: chocolate;
+  padding: 50px;
+  border-radius: 10px;
+}
+.fas {
+  color: white;
+}
